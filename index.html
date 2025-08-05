@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.131.0">
+	<meta name="generator" content="Hugo 0.131.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <title>Introduction to Artificial Neural Networks</title>
 <meta name="description" content="Intro to ANN Presentation">
@@ -96,11 +96,26 @@
 <h2 id="neurons">Neurons</h2>
 </section><section>
 <h2 id="neurons-1">Neurons</h2>
-<ul>
-<li>input signals from its <em>dendrites</em>;</li>
-<li>output signals along its (single) <em>axon</em>;</li>
-</ul>
 <img src="neuron1.png"/>
+</section><section>
+<h2 id="neurons-2">Neurons</h2>
+<ul>
+<li><strong>Neurons</strong>: Brain&rsquo;s functional units that transmit signals through electrical impulses.
+<ul>
+<li><strong>Dendrites</strong>: Receive signals.</li>
+<li><strong>Axons</strong>: Transmit signals.</li>
+</ul>
+</li>
+<li><strong>Synapses</strong>: Gaps between neurons where signals are transmitted.</li>
+<li><strong>Glial Cells</strong>: Support neurons, provide structure, and assist in communication.</li>
+<li><strong>Brain Regions</strong>:
+<ul>
+<li><strong>Cerebrum</strong>: Higher functions like reasoning and memory.</li>
+<li><strong>Cerebellum</strong>: Coordinates movement and balance.</li>
+<li><strong>Brainstem</strong>: Controls vital functions like heart rate and breathing.</li>
+</ul>
+</li>
+</ul>
 
 
 
@@ -109,7 +124,7 @@
 </ul>
 </aside>
 </section><section>
-<h2 id="neurons-2">Neurons</h2>
+<h2 id="neurons-3">Neurons</h2>
 <h3 id="how-do-they-work">How do they work?</h3>
 <ul>
 <div align="left">
@@ -150,10 +165,6 @@
 
 </div>
 </ul>
-</section><section>
-<h2 id="neurons-3">Neurons</h2>
-<h3 id="artificial-neuron">Artificial Neuron</h3>
-<center><img src="artificial_neuron.jpeg" width="800px"/></center>
 </section>
 
 <section data-noprocess data-shortcode-slide
@@ -166,16 +177,76 @@
 <li>It appears that one reason why the human brain is <em>so powerful</em> is the
 sheer complexity of connections between neurons;</li>
 <li>The brain exhibits <em>huge degree of parallelism</em>;</li>
+<li>The <em>interconnections</em> between neurons are <em>not fixed</em>;</li>
 </ul>
+
+
+
+<aside class="notes"><ul>
+<li><strong>Synapses</strong> connect neurons in the brain.</li>
+<li>The <strong>strength</strong> of these synaptic connections is <strong>plastic</strong>, meaning it can change.</li>
+<li>This phenomenon is called <strong>synaptic plasticity</strong>.</li>
+<li>Synaptic connections can:
+<ul>
+<li><strong>Strengthen</strong> or <strong>weaken</strong> based on:
+<ul>
+<li>Experience</li>
+<li>Learning</li>
+<li>External stimuli</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>This adaptability allows the brain to:
+<ul>
+<li><strong>Adapt</strong></li>
+<li><strong>Learn</strong></li>
+<li><strong>Retain information</strong></li>
+</ul>
+</li>
+</ul>
+</aside>
+</section><section>
+<h3 id="slide-2-the-brains-complexity"><strong>Slide 2: The Brain&rsquo;s Complexity</strong></h3>
+<ul>
+<li><strong>Neural Networks</strong>: Neurons form complex networks for processing information (e.g., decision-making, learning).</li>
+<li><strong>Plasticity</strong>: The brain can reorganize itself, especially during learning or injury recovery.</li>
+<li><strong>Memory</strong>: The exact process of how memories are stored and retrieved is still not fully understood.</li>
+<li><strong>Consciousness</strong>: Despite research, the nature of consciousness remains a mystery.</li>
+<li><strong>Unanswered Questions</strong>:
+<ul>
+<li>How does the brain store and retrieve memories?</li>
+<li>What happens during sleep to consolidate memories?</li>
+</ul>
+</li>
+</ul>
+
+
+
+<aside class="notes"><h3 id="curious-fact-the-case-of-phineas-gage-1848">Curious Fact: The Case of Phineas Gage (1848)</h3>
+<p>One of the most famous early medical cases that contributed to our understanding of brain function was that of <strong>Phineas Gage</strong>, a railroad construction foreman who survived a severe brain injury.</p>
+<ul>
+<li>Gage was involved in an accident where a large iron rod was driven through his skull, damaging his <strong>frontal lobes</strong>.</li>
+<li>Remarkably, he survived, but the injury drastically changed his personality, turning him from a responsible, mild-mannered individual into someone impulsive and socially inappropriate.</li>
+<li>This case was pivotal in early neuroscience, suggesting that the <strong>frontal lobes</strong> are involved in personality, decision-making, and social behavior.</li>
+</ul>
+<p>Gage’s case was one of the first to demonstrate the link between <strong>brain structure</strong> and <strong>behavior</strong>, marking a significant step in understanding how the brain’s different regions control specific functions.</p>
+</aside>
 </section><section>
 <h2 id="artificial-neural-networks">Artificial Neural Networks</h2>
+</section><section>
+<h2 id="artificial-neural-networks-1">Artificial Neural Networks</h2>
+<h3 id="the-artificial-neuron">The artificial neuron</h3>
+<center><img src="artificial_neuron.jpeg" width="800px"/></center>
+</section><section>
+<h2 id="artificial-neural-networks-2">Artificial Neural Networks</h2>
 <ul>
 <li>Model each part of the neuron and interactions;</li>
 <li><em>Interact multiplicatively</em> (e.g. $w_0x_0$) with the dendrites of the other neuron based on the synaptic strength at that synapse (e.g. $w_0$ );</li>
 <li>Learn <em>synapses strengths</em>;</li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-1">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-3">Artificial Neural Networks</h2>
 <h3 id="function-approximation-machines">Function Approximation Machines</h3>
 <ul>
 <li>Datasets as composite functions: $y=f^{*}(x)$
@@ -191,7 +262,7 @@ sheer complexity of connections between neurons;</li>
 </li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-2">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-4">Artificial Neural Networks</h2>
 <ul>
 <li>Can be seen as a directed graph with units (or neurons) situated at the vertices;
 <ul>
@@ -207,14 +278,14 @@ sheer complexity of connections between neurons;</li>
 </li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-3">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-5">Artificial Neural Networks</h2>
 <ul>
 <li><em>Input</em>, <em>Output</em>, and <em>Hidden</em> layers;</li>
 <li>Hidden as in &ldquo;not defined by the output&rdquo;;</li>
 </ul>
 <center><img src="nn1.png" height="200px" style="margin-top:50px;"/></center>
 </section><section>
-<h2 id="artificial-neural-networks-4">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-6">Artificial Neural Networks</h2>
 <h6 id="motivation-example-taken-from-jay-alammar-a-hrefhttpsjalammargithubiovisual-interactive-guide-basics-neural-networks-target_blankblog-posta">Motivation Example (taken from Jay Alammar <a href="https://jalammar.github.io/visual-interactive-guide-basics-neural-networks/" target="_blank">blog post</a>)</h6>
 <ul>
 <li>Imagine that you want to forecast the price of houses at your neighborhood;
@@ -247,7 +318,7 @@ sheer complexity of connections between neurons;</li>
 </tbody>
 </table>
 </section><section>
-<h2 id="artificial-neural-networks-5">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-7">Artificial Neural Networks</h2>
 <h6 id="motivation-example-taken-from-jay-alammar-a-hrefhttpsjalammargithubiovisual-interactive-guide-basics-neural-networks-target_blankblog-posta-1">Motivation Example (taken from Jay Alammar <a href="https://jalammar.github.io/visual-interactive-guide-basics-neural-networks/" target="_blank">blog post</a>)</h6>
 <p>
 
@@ -267,7 +338,7 @@ sheer complexity of connections between neurons;</li>
 
 </p>
 </section><section>
-<h2 id="artificial-neural-networks-6">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-8">Artificial Neural Networks</h2>
 <h6 id="motivation-example-taken-from-jay-alammar-a-hrefhttpsjalammargithubiovisual-interactive-guide-basics-neural-networks-target_blankblog-posta-2">Motivation Example (taken from Jay Alammar <a href="https://jalammar.github.io/visual-interactive-guide-basics-neural-networks/" target="_blank">blog post</a>)</h6>
 <ul>
 <li>Our very first neural network looks like this:
@@ -278,7 +349,7 @@ sheer complexity of connections between neurons;</li>
 </li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-7">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-9">Artificial Neural Networks</h2>
 <h6 id="motivation-example-taken-from-jay-alammar-a-hrefhttpsjalammargithubiovisual-interactive-guide-basics-neural-networks-target_blankblog-posta-3">Motivation Example (taken from Jay Alammar <a href="https://jalammar.github.io/visual-interactive-guide-basics-neural-networks/" target="_blank">blog post</a>)</h6>
 <ul>
 <li>Multiplying $2,000$ sq ft by $180$ gives us  $360,000$.</li>
@@ -314,7 +385,7 @@ sheer complexity of connections between neurons;</li>
 </tbody>
 </table>
 </section><section>
-<h2 id="artificial-neural-networks-8">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-10">Artificial Neural Networks</h2>
 <h6 id="motivation-example-taken-from-jay-alammar-a-hrefhttpsjalammargithubiovisual-interactive-guide-basics-neural-networks-target_blankblog-posta-4">Motivation Example (taken from Jay Alammar <a href="https://jalammar.github.io/visual-interactive-guide-basics-neural-networks/" target="_blank">blog post</a>)</h6>
 <ul>
 <li>How bad is our model?
@@ -369,14 +440,14 @@ sheer complexity of connections between neurons;</li>
 </tbody>
 </table>
 </section><section>
-<h2 id="artificial-neural-networks-9">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-11">Artificial Neural Networks</h2>
 <ul>
 <li>Fitting the line to our data:</li>
 </ul>
 <center><img src="manual_training1.gif" width="450px"/></center>
 <p>Follows the equation: $\hat{y} = W * x$</p>
 </section><section>
-<h2 id="artificial-neural-networks-10">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-12">Artificial Neural Networks</h2>
 <p>How about addind the <em>Intercept</em>?</p>
 
 
@@ -384,7 +455,7 @@ sheer complexity of connections between neurons;</li>
 
 
 </section><section>
-<h2 id="artificial-neural-networks-11">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-13">Artificial Neural Networks</h2>
 <h3 id="the-bias">The Bias</h3>
 <center><img src="nn3.png" width="500px"/></center>
 </section><section>
@@ -428,7 +499,7 @@ Usually, in classification problems, we have the impression that the more featur
 
 
 </section><section>
-<h2 id="artificial-neural-networks-12">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-14">Artificial Neural Networks</h2>
 <h3 id="how-to-discover-the-correct-weights">How to discover the correct weights?</h3>
 <ul>
 <li>Gradient Descent:
@@ -444,7 +515,7 @@ Usually, in classification problems, we have the impression that the more featur
 </li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-13">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-15">Artificial Neural Networks</h2>
 <h3 id="gradient-descent">Gradient Descent</h3>
 <ul>
 <li>In mathematics, gradient is defined as <em>partial derivative for every input variable</em> of function;</li>
@@ -452,14 +523,14 @@ Usually, in classification problems, we have the impression that the more featur
 <li><em>Minimize a function</em> by iteratively moving a little bit in the direction of negative gradient;</li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-14">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-16">Artificial Neural Networks</h2>
 <h3 id="gradient-descent-1">Gradient Descent</h3>
 <ul>
 <li>With a single weight:</li>
 </ul>
 <center><img src="gd1.jpeg" width="500px"/></center>
----
-<h2 id="artificial-neural-networks-15">Artificial Neural Networks</h2>
+</section><section>
+<h2 id="artificial-neural-networks-17">Artificial Neural Networks</h2>
 <h3 id="perceptron">Perceptron</h3>
 <ul>
 <li>In 1958, Frank Rosenblatt proposed an algorithm for training the perceptron.</li>
@@ -468,7 +539,7 @@ Usually, in classification problems, we have the impression that the more featur
 <li>Adjustable Synaptic weights</li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-16">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-18">Artificial Neural Networks</h2>
 <h3 id="perceptron-1">Perceptron</h3>
 <ul>
 <li>Classification of observations into two classes:</li>
@@ -476,7 +547,7 @@ Usually, in classification problems, we have the impression that the more featur
 <center><img src="perceptron1.png" height="350px"/></center>
 <h6 id="images-taken-from-a-hrefhttpstowardsdatasciencecomperceptron-learning-algorithm-d5db0deab975-target_blanktowards-data-sciencea">Images Taken from <a href="https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975" target="_blank">Towards Data Science</a></h6>
 </section><section>
-<h2 id="artificial-neural-networks-17">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-19">Artificial Neural Networks</h2>
 <h3 id="perceptron-2">Perceptron</h3>
 <ul>
 <li>Classification of observations into two classes:</li>
@@ -484,30 +555,87 @@ Usually, in classification problems, we have the impression that the more featur
 <center><img src="perceptron2.png" height="350px"/></center>
 <h6 id="images-taken-from-a-hrefhttpstowardsdatasciencecomperceptron-learning-algorithm-d5db0deab975-target_blanktowards-data-sciencea-1">Images Taken from <a href="https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975" target="_blank">Towards Data Science</a></h6>
 </section><section>
-<h2 id="artificial-neural-networks-18">Artificial Neural Networks</h2>
-<h3 id="perceptron-3">Perceptron</h3>
-<ul>
-<li>E.g, the OR function:</li>
-</ul>
-<center><img src="or1.png" width="550px"/></center>
-<h4 id="find-the-w_i-values-that-could-solve-the-or-problem">Find the $w_i$ values that could solve the or problem.</h4>
-</section><section>
-<h2 id="artificial-neural-networks-19">Artificial Neural Networks</h2>
-<h3 id="perceptron-4">Perceptron</h3>
-<ul>
-<li>E.g, the OR function:</li>
-</ul>
-<br />
-<center><img src="or2.png" width="550px"/></center>
-</section><section>
 <h2 id="artificial-neural-networks-20">Artificial Neural Networks</h2>
-<h3 id="perceptron-5">Perceptron</h3>
+<h3 id="activation-functions">Activation Functions</h3>
 <ul>
-<li>One possible solution $w_0=-1$, $w_1=1.1$, $w_2=1.1$:</li>
+<li>Describes <em>whether or not the neuron fires</em>, i.e., if it forwards its value for the next neuron layer;</li>
+<li>Historically they translated the output of the neuron into either 1 (On/active) or 0 (Off) - Step Function, or the Sigmoid function</li>
 </ul>
-<center><img src="or4.png" width="450px"/></center>
 </section><section>
 <h2 id="artificial-neural-networks-21">Artificial Neural Networks</h2>
+<h3 id="a-very-practical-example-for-motivation-purposes">A very practical example for motivation purposes</h3>
+<ul>
+<li>Classification of fruits based on their weight and color:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Fruit</th>
+<th>Color (Mapped as integer)</th>
+<th>Size (cm)</th>
+<th>Class (Small = 0, Large = 1)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple</td>
+<td>0 (Red)</td>
+<td>5</td>
+<td>0 (Small)</td>
+</tr>
+<tr>
+<td>Apple</td>
+<td>1 (Green)</td>
+<td>5</td>
+<td>0 (Small)</td>
+</tr>
+<tr>
+<td>Banana</td>
+<td>2 (Yellow)</td>
+<td>15</td>
+<td>1 (Large)</td>
+</tr>
+<tr>
+<td>Banana</td>
+<td>2 (Yellow)</td>
+<td>20</td>
+<td>1 (Large)</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>3 (Orange)</td>
+<td>7</td>
+<td>0 (Small)</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>3 (Orange)</td>
+<td>8</td>
+<td>0 (Small)</td>
+</tr>
+<tr>
+<td>Melon</td>
+<td>4 (Green)</td>
+<td>25</td>
+<td>1 (Large)</td>
+</tr>
+<tr>
+<td>Melon</td>
+<td>4 (Green)</td>
+<td>30</td>
+<td>1 (Large)</td>
+</tr>
+</tbody>
+</table>
+</section><section>
+<h2 id="artificial-neural-networks-22">Artificial Neural Networks</h2>
+<h3 id="perceptron-3">Perceptron</h3>
+<ul>
+<li>The feature space is defined by the <em>color</em> and <em>size</em> of the fruit;</li>
+</ul>
+<center><img src="fruit1.png" width="500px"/></center>
+</section><section>
+<h2 id="artificial-neural-networks-23">Artificial Neural Networks</h2>
 <h3 id="the-a-hrefhttpskerasio-target_blankkeras-frameworka">The <a href="https://keras.io" target="_blank">Keras framework</a></h3>
 <ul>
 <li><em>High-level</em> neural networks API;</li>
@@ -521,7 +649,7 @@ Usually, in classification problems, we have the impression that the more featur
 <li>Compatible with: <em>Python 2.7-3.12</em> and <em>R</em>;</li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-22">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-24">Artificial Neural Networks</h2>
 <h3 id="the-a-hrefhttpskerasio-target_blankkeras-frameworka-1">The <a href="https://keras.io" target="_blank">Keras framework</a></h3>
 <ul>
 <li>Use the implementation of the tensorflow:
@@ -537,7 +665,7 @@ from tensorflow.keras.models import Sequential
 model = Sequential()
 </code></pre>
 </section><section>
-<h2 id="artificial-neural-networks-23">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-25">Artificial Neural Networks</h2>
 <h3 id="the-a-hrefhttpskerasio-target_blankkeras-frameworka-2">The <a href="https://keras.io" target="_blank">Keras framework</a></h3>
 <ul>
 <li>Create a single layer with a single neuron:
@@ -549,8 +677,10 @@ model = Sequential()
 <pre><code class="language-python"># Import the Dense layer
 from tensorflow.keras.layers import Dense
 
-# Add a forward layer to the model
-model.add(Dense(units=1, input_dim=2))
+model = Sequential()
+model.add(Input(shape=(2,)))  # Input layer with 2 neurons (color and size)
+model.add(Dense(4))  # Hidden layer with 4 neurons
+model.add(Dense(1, activation='sigmoid'))  # Output layer with sigmoid activation for binary classification
 </code></pre>
 
 
@@ -560,7 +690,7 @@ model.add(Dense(units=1, input_dim=2))
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-24">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-26">Artificial Neural Networks</h2>
 <h3 id="the-a-hrefhttpskerasio-target_blankkeras-frameworka-3">The <a href="https://keras.io" target="_blank">Keras framework</a></h3>
 <ul>
 <li>Compile and train the model
@@ -572,11 +702,13 @@ href="https://medium.com/tebs-lab/deep-neural-networks-as-computational-graphs-8
 </ul>
 <pre><code class="language-python"># Specify the loss function (error) and the optimizer
 #   (a variation of the gradient descent method)
-model.compile(loss=&quot;mean_squared_error&quot;, optimizer=&quot;sgd&quot;)
+model.compile(loss='mse',
+              optimizer=SGD(learning_rate=0.1),
+              metrics=['accuracy'])
 
 # Fit the model using the train data and also
 #   provide the expected result
-model.fit(x=train_data_X, y=train_data_Y)
+model.fit(X, y, epochs=100, verbose=1)
 </code></pre>
 
 
@@ -598,24 +730,36 @@ model.fit(x=train_data_X, y=train_data_Y)
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-25">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-27">Artificial Neural Networks</h2>
 <h3 id="the-a-hrefhttpskerasio-target_blankkeras-frameworka-4">The <a href="https://keras.io" target="_blank">Keras framework</a></h3>
 <ul>
 <li>Evaluate the quality of the model:</li>
 </ul>
 <pre><code class="language-python"># Use evaluate function to get the loss and other metrics that the framework
 #  makes available
-loss_and_metrics = model.evaluate(train_data_X, train_data_Y)
-print(loss_and_metrics)
-#0.4043288230895996
+loss, accuracy = model.evaluate(X, y, verbose=0)
+print(f'Loss: {loss:.4f}')
+print(f'Accuracy: {accuracy:.4f}')
+# Loss: 0.069
+# Accuracy: 0.8750
+</code></pre>
+</section><section>
+<h2 id="artificial-neural-networks-28">Artificial Neural Networks</h2>
+<h3 id="perceptron-4">Perceptron</h3>
+<ul>
+<li>Do a prediction using the trained model.</li>
+</ul>
+<center><img src="fruit2.png" width="500px"/></center>
+</section><section>
+<h2 id="artificial-neural-networks-29">Artificial Neural Networks</h2>
+<h3 id="the-a-hrefhttpskerasio-target_blankkeras-frameworka-5">The <a href="https://keras.io" target="_blank">Keras framework</a></h3>
+<pre><code class="language-python"># New fruit samples (color, size)
+new_fruits = np.array([[0, 8], [3, 12]])  # Apple with size 8 cm, Orange with size 12 cm
 
-# Do a prediction using the trained model
-prediction = model.predict(train_data_X)
-print(prediction)
-# [[-0.25007164]
-#  [ 0.24998784]
-#  [ 0.24999022]
-#  [ 0.7500497 ]]
+predictions = model.predict(new_fruits)
+print(predictions)
+# [[0.22244604]
+#  [0.77456075]]
 </code></pre>
 
 
@@ -623,27 +767,64 @@ print(prediction)
 <aside class="notes"><p>We can use verbose during the evaluate</p>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-26">Artificial Neural Networks</h2>
-<h3 id="activation-functions">Activation Functions</h3>
+<h2 id="artificial-neural-networks-30">Artificial Neural Networks</h2>
+<h3 id="perceptron-5">Perceptron</h3>
 <ul>
-<li>Describes <em>whether or not the neuron fires</em>, i.e., if it forwards its value for the next neuron layer;</li>
-<li>Historically they translated the output of the neuron into either 1 (On/active) or 0 (Off) - Step Function:</li>
+<li>The model predicts the probability of each fruit being large (1) or small (0):
+<ul>
+<li>Apple with size 8 cm: 22.24% chance of being small;</li>
+<li>Orange with size 12 cm: 77.45% chance of being small;</li>
 </ul>
-<pre><code class="language-r">if(prediction[i]&gt;0.5){
-  return 1
-}
-return 0
-</code></pre>
+</li>
+<li>If the probability is above 0.5, classify as large (1), otherwise small (0);</li>
+</ul>
 </section><section>
-<h2 id="artificial-neural-networks-27">Artificial Neural Networks</h2>
-<h3 id="the-a-hrefhttpskerasio-target_blankkeras-frameworka-5">The <a href="https://keras.io" target="_blank">Keras framework</a></h3>
+<h2 id="artificial-neural-networks-31">Artificial Neural Networks</h2>
+<ul>
+<li>The line that separates the two classes is called the <em>decision boundary</em>;</li>
+</ul>
+<center><img src="fruit3.png" width="400px"/></center>
+<ul>
+<li>The decision boundary is defined by the weights and bias of the perceptron;</li>
+</ul>
+<center>
+
+<span class='fragment ' >Full Notebook <a href="https://colab.research.google.com/drive/15sKSB0XkhqckZYEn4Wmm8tbthaHjCpt_?usp=sharing" target="_blank">here</a>.</span>
+
+</center>
+</section><section>
+<h2 id="artificial-neural-networks-32">Artificial Neural Networks</h2>
+<h3 id="perceptron-6">Perceptron</h3>
+<ul>
+<li>E.g, the OR function:</li>
+</ul>
+<center><img src="or1.png" width="550px"/></center>
+<h4 id="find-the-w_i-values-that-could-solve-the-or-problem">Find the $w_i$ values that could solve the or problem.</h4>
+</section><section>
+<h2 id="artificial-neural-networks-33">Artificial Neural Networks</h2>
+<h3 id="perceptron-7">Perceptron</h3>
+<ul>
+<li>E.g, the OR function:</li>
+</ul>
+<br />
+<center><img src="or2.png" width="550px"/></center>
+</section><section>
+<h2 id="artificial-neural-networks-34">Artificial Neural Networks</h2>
+<h3 id="perceptron-8">Perceptron</h3>
+<ul>
+<li>One possible solution $w_0=-1$, $w_1=1.1$, $w_2=1.1$:</li>
+</ul>
+<center><img src="or4.png" width="450px"/></center>
+</section><section>
+<h2 id="artificial-neural-networks-35">Artificial Neural Networks</h2>
+<h3 id="the-a-hrefhttpskerasio-target_blankkeras-frameworka-6">The <a href="https://keras.io" target="_blank">Keras framework</a></h3>
 <h4 id="exercise">Exercise:</h4>
 <p>Run the example of the Jupyter notebook:
 <br />
 <a href="https://colab.research.google.com/drive/1hNOR60jfru-b0Vb-ec-Y_yF9pyuy8Wtj?usp=sharing" target="_blank">Perceptron - OR</a></p>
 </section><section>
-<h2 id="artificial-neural-networks-28">Artificial Neural Networks</h2>
-<h3 id="perceptron-6">Perceptron</h3>
+<h2 id="artificial-neural-networks-36">Artificial Neural Networks</h2>
+<h3 id="perceptron-9">Perceptron</h3>
 <h4 id="exercise-1">Exercise:</h4>
 <ul>
 <li>What about the <em>AND</em> function?</li>
@@ -685,7 +866,7 @@ return 0
 
 
 </section><section>
-<h2 id="artificial-neural-networks-29">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-37">Artificial Neural Networks</h2>
 <h3 id="perceptron---what-it-emcant-doem">Perceptron - What it <em>can&rsquo;t do</em>!</h3>
 <ul>
 <li>The <em>XOR</em> function:</li>
@@ -696,7 +877,7 @@ XOR function <a
 href="https://colab.research.google.com/drive/1NKIpV-SZ38SU6szy_e2hZNBG7MC2_d9G?usp=sharing"
 target="_blank">here</a>.</p>
 </section><section>
-<h2 id="artificial-neural-networks-30">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-38">Artificial Neural Networks</h2>
 <h3 id="understanding-the-training">Understanding the training</h3>
 <ul>
 <li>Plotting the training progress of the XOR ANN:</li>
@@ -710,7 +891,7 @@ plt.xlabel('Epoch')
 plt.legend(['Loss'], loc='upper left')
 plt.show()
 </code></pre>
-<center><a href="loss_trainning2.png" target="_blank"><img src="loss_trainning2.png" width="250px" /></a></center>
+<center><a href="loss_trainning2.png" target="_blank"><img src="loss_trainning2.png" width="200px" /></a></center>
 
 
 
@@ -720,7 +901,7 @@ plt.show()
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-31">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-39">Artificial Neural Networks</h2>
 <h3 id="activation-functions-1">Activation Functions</h3>
 <ul>
 <li><em>Multiply the input</em> by its <em>weights</em>, <em>add the bias</em> and <em>applies activation</em>;</li>
@@ -793,16 +974,16 @@ where $\sigma(x)$ corresponds to the <strong>logistic function</strong>.</p>
 <li>Although saturation occurs, $g^\prime(a)$ reaches higher values, even reaching a maximum of 1 when $a = 0$.</li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-32">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-40">Artificial Neural Networks</h2>
 <h3 id="the-bias-1">The Bias</h3>
 <center><img src="bias1.png" width="600px"/></center>
 </section><section>
-<h2 id="artificial-neural-networks-33">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-41">Artificial Neural Networks</h2>
 <h3 id="the-bias-2">The Bias</h3>
 <p>Give even more power to our model</p>
 <center><img src="bias2.png" width="450px"/></center>
 </section><section>
-<h2 id="artificial-neural-networks-34">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-42">Artificial Neural Networks</h2>
 <h3 id="perceptron---solving-the-xor-problem">Perceptron - Solving the XOR problem</h3>
 <ul>
 <li>3D example of the solution of learning the OR function:
@@ -818,7 +999,7 @@ where $\sigma(x)$ corresponds to the <strong>logistic function</strong>.</p>
 <aside class="notes"><p>That creates a <strong>hyperplane</strong> that separates the classes;</p>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-35">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-43">Artificial Neural Networks</h2>
 <h3 id="perceptron---solving-the-xor-problem-1">Perceptron - Solving the XOR problem</h3>
 <ul>
 <li>Maybe there is a combination of functions that could create hyperplanes that separate the <em>XOR</em> classes:
@@ -834,7 +1015,7 @@ where $\sigma(x)$ corresponds to the <strong>logistic function</strong>.</p>
 <aside class="notes"><p>Now, there are 2 hyperplanes, that when put together, can perfectly separate the classes;</p>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-36">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-44">Artificial Neural Networks</h2>
 <h3 id="perceptron---solving-the-xor-problem-2">Perceptron - Solving the XOR problem</h3>
 <ul>
 <li>The combination of the layers:</li>
@@ -852,7 +1033,7 @@ we changed the shape of the regression line being built;</li>
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-37">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-45">Artificial Neural Networks</h2>
 <h4 id="emmultilayer-perceptronsem---increasing-the-model-power"><em>Multilayer Perceptrons</em> - Increasing the model power</h4>
 <ul>
 <li>
@@ -865,14 +1046,14 @@ $$y = f^{(3)}(f^{(2)}(f^{(1)}(x)))$$</p>
 </li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-38">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-46">Artificial Neural Networks</h2>
 <h4 id="emmultilayer-perceptronsem---increasing-the-model-power-1"><em>Multilayer Perceptrons</em> - Increasing the model power</h4>
 <ul>
 <li>Information flows from $x$ , through computations and finally to $y$.</li>
 <li>No feedback!</li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-39">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-47">Artificial Neural Networks</h2>
 <h3 id="perceptron---solving-the-xor-problem-3">Perceptron - Solving the XOR problem</h3>
 <ul>
 <li>Implementing an ANN that can solve the XOR problem:
@@ -897,7 +1078,7 @@ target="_blank">here</a>.</p>
 <aside class="notes"><p>Train for little steps and then increase the number of epochs</p>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-40">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-48">Artificial Neural Networks</h2>
 <h3 id="understanding-the-training-1">Understanding the training</h3>
 <ul>
 <li>Plot the architecture of the network:</li>
@@ -911,7 +1092,7 @@ target="_blank">here</a>.</p>
 <aside class="notes"><p>The ? means that they take as much examples as possible;</p>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-41">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-49">Artificial Neural Networks</h2>
 <h3 id="problems-with-the-training-procedure">Problems with the training procedure:</h3>
 <ul>
 <li>Saddle points:
@@ -933,7 +1114,7 @@ if the weights are initialized between 0.5 and 1.</li>
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-42">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-50">Artificial Neural Networks</h2>
 <h3 id="optimization-alternatives">Optimization alternatives</h3>
 <ul>
 <li>The Gradient Descent is <em>not always the best option</em> to go with:
@@ -945,7 +1126,7 @@ dataset</em>;</li>
 </li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-43">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-51">Artificial Neural Networks</h2>
 <h3 id="optimization-alternatives-1">Optimization alternatives</h3>
 <ul>
 <li>The <a href="gd.gif" target="_blank">Gradient Descent</a> is <em>not always the best option</em> to go with:
@@ -964,7 +1145,7 @@ dataset</em>;</li>
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-44">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-52">Artificial Neural Networks</h2>
 <h3 id="optimization-alternatives-2">Optimization alternatives</h3>
 <ul>
 <li>Gradient Descent alternatives:
@@ -989,7 +1170,7 @@ dataset</em>;</li>
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-45">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-53">Artificial Neural Networks</h2>
 <h3 id="optimization-alternatives-3">Optimization alternatives</h3>
 <h6 id="adaptative-learning-rates">Adaptative Learning Rates:</h6>
 <ul>
@@ -1014,7 +1195,7 @@ dataset</em>;</li>
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-46">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-54">Artificial Neural Networks</h2>
 <h3 id="multilayer-perceptron---xor">Multilayer Perceptron - XOR</h3>
 <ul>
 <li>Try another optimizer:</li>
@@ -1023,7 +1204,7 @@ dataset</em>;</li>
 </code></pre>
 <p>My <a href="https://colab.research.google.com/drive/1tsK3aESxc0xGTVLhry-vwMpK2j8mRl-o?usp=sharing" target="_blank">solution</a></p>
 </section><section>
-<h2 id="artificial-neural-networks-47">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-55">Artificial Neural Networks</h2>
 <h3 id="predicting-probabilities">Predicting probabilities</h3>
 <ul>
 <li>Imagine that we have <em>more than 2 classes</em> to output;</li>
@@ -1031,7 +1212,7 @@ dataset</em>;</li>
 </ul>
 <center><a href="classification_example.jpeg" target="_blank"><img src="classification_example.jpeg" width="300px"/></a></center>
 </section><section>
-<h2 id="artificial-neural-networks-48">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-56">Artificial Neural Networks</h2>
 <h3 id="predicting-probabilities-1">Predicting probabilities</h3>
 <ul>
 <li>The <a href="https://en.wikipedia.org/wiki/Softmax_function" target="_blank">Softmax</a> function;</li>
@@ -1062,7 +1243,7 @@ of the input example belonging to each of the classes</em> in my problem;</li>
 </li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-49">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-57">Artificial Neural Networks</h2>
 <h3 id="loss-functions">Loss functions</h3>
 <ul>
 <li>For regression problems
@@ -1084,7 +1265,7 @@ of the input example belonging to each of the classes</em> in my problem;</li>
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-50">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-58">Artificial Neural Networks</h2>
 <h3 id="loss-functions-1">Loss functions</h3>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Cross_entropy" target="_blank">Cross Entropy</a> loss:
@@ -1115,7 +1296,7 @@ of the input example belonging to each of the classes</em> in my problem;</li>
 </ul>
 </aside>
 </section><section>
-<h2 id="artificial-neural-networks-51">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-59">Artificial Neural Networks</h2>
 <h3 id="what-about-the-overfitting">What about the overfitting?</h3>
 <img src="overfitting.png" width="300px"/>
 </section><section>
@@ -1241,7 +1422,7 @@ There will never be enough examples to perfectly model the phenomenon.</p>
 <li>Nearly all learning algorithms have some form of regularization mechanism.</li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-52">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-60">Artificial Neural Networks</h2>
 <h3 id="dealing-with-overfitting">Dealing with overfitting</h3>
 <ul>
 <li><em>Dropout</em> layers:
@@ -1252,7 +1433,7 @@ There will never be enough examples to perfectly model the phenomenon.</p>
 </ul>
 <center><a href="dropout.gif" target="_blank"><img src="dropout.gif" width="500px"/></a></center>
 </section><section>
-<h2 id="artificial-neural-networks-53">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-61">Artificial Neural Networks</h2>
 <h3 id="dealing-with-overfitting-1">Dealing with overfitting</h3>
 <ul>
 <li><em>Dropout</em> layers:</li>
@@ -1275,7 +1456,7 @@ model.add(Dropout(0.5))
   <source src="ann.mp4" type="video/mp4">
 </video>
 </section><section>
-<h2 id="artificial-neural-networks-54">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-62">Artificial Neural Networks</h2>
 <h3 id="larger-example">Larger Example</h3>
 <ul>
 <li>The <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a> dataset: database of handwritten digits;</li>
@@ -1283,7 +1464,7 @@ model.add(Dropout(0.5))
 </ul>
 <center><a href="mnist.png" target="_blank"><img src="mnist.png" width="500px"/></a></center>
 </section><section>
-<h2 id="artificial-neural-networks-55">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-63">Artificial Neural Networks</h2>
 <h3 id="the-mnist-mlp">The MNIST MLP</h3>
 <ul>
 <li>Try to improve the classification results using <a href="https://colab.research.google.com/drive/1AnGJz_R0PJF0d83ye_3y7NPGuX5YipBi?usp=sharing" target="_blank">this notebook</a>:</li>
@@ -1297,7 +1478,7 @@ model.add(Dropout(0.5))
 </li>
 </ul>
 </section><section>
-<h2 id="artificial-neural-networks-56">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-64">Artificial Neural Networks</h2>
 <h3 id="the-mnist-mlp-1">The MNIST MLP</h3>
 <ul>
 <li>
@@ -1332,26 +1513,26 @@ model.add(Dropout(0.5))
   
 <h1 id="span-stylecolorfff-particle-physicsspan"><span style="color:#fff;"> Particle Physics</span></h1>
 </section><section>
-<h2 id="artificial-neural-networks-57">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-65">Artificial Neural Networks</h2>
 <h3 id="the-particle-physics-project">The Particle Physics Project</h3>
 <center><a href="atlas_particle_shower.jpg" target="_blank"><img src="atlas_particle_shower.jpg" width="500px"/></a></center>
 </section><section>
-<h2 id="artificial-neural-networks-58">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-66">Artificial Neural Networks</h2>
 <h3 id="the-particle-physics-project-1">The Particle Physics Project</h3>
 <center><a href="jet-images.png" target="_blank"><img src="jet-images.png" width="500px"/></a></center>
 </section><section>
-<h2 id="artificial-neural-networks-59">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-67">Artificial Neural Networks</h2>
 <h3 id="the-particle-physics-project-2">The Particle Physics Project</h3>
 <ul>
 <li>Quantum Chromodynamics</li>
 </ul>
 <center><a href="qcd.png" target="_blank"><img src="qcd.png" width="500px"/></a></center>
 </section><section>
-<h2 id="artificial-neural-networks-60">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-68">Artificial Neural Networks</h2>
 <h3 id="signal-vs-background">Signal VS Background</h3>
 <center><a href="backgroundVSsignal.png" target="_blank"><img src="backgroundVSsignal.png" width="700px"/></a></center>
 </section><section>
-<h2 id="artificial-neural-networks-61">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-69">Artificial Neural Networks</h2>
 <h3 id="signal-vs-background-1">Signal VS Background</h3>
 <p>Run this <a href="https://colab.research.google.com/drive/1cbiRS7ax1k1mzqk6NioSuQgOiLWJIVx3?usp=sharing" target="_blank">Jupyter Notebook</a> for performing the Jet Classification.</p>
 </section>
@@ -1361,11 +1542,11 @@ model.add(Dropout(0.5))
   
 <h1 id="span-stylecolorff0000covid19-chest-ct-image-processingspan"><span style="color:#ff0000;">COVID19 Chest CT Image Processing</span></h1>
 </section><section>
-<h2 id="artificial-neural-networks-62">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-70">Artificial Neural Networks</h2>
 <h3 id="covid19-diagnosis">COVID19 Diagnosis</h3>
 <center><a href="COVIDCT1.png" target="_blank"><img src="COVIDCT1.png" width="500px"/></a></center>
 </section><section>
-<h2 id="artificial-neural-networks-63">Artificial Neural Networks</h2>
+<h2 id="artificial-neural-networks-71">Artificial Neural Networks</h2>
 <h3 id="covid19-diagnosis-1">COVID19 Diagnosis</h3>
 <p>Run this <a href="https://colab.research.google.com/drive/1rXZP2XofMS3ijiOkrsJSn4dUK1zzz68t?usp=sharing" target="_blank">Jupyter Notebook</a> for performing the CT Image Classification.</p>
 
